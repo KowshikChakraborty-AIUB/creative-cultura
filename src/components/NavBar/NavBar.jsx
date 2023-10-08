@@ -25,7 +25,6 @@ const NavBar = () => {
                 </div>
                 <img src="https://i.ibb.co/DYCn8nR/cultural-logo.jpg" className="h-12 rounded-full" alt="" />
                 <a className="normal-case text-xl ml-2">Community & Culture</a>
-                {/* <img src="https://www.discoverybangladesh.com/images/culture.jpg"></img> */}
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal">

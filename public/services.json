@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Traditional Dance Performance",
+        "image": "https://i.ibb.co/Q64Gtp7/cultural-dance.jpg",
+        "price": "TK 35,000 - TK 45,000",
+        "short_description": "Experience the vibrant and rich culture of Bangladesh through traditional dance performances.",
+        "long_description": "Immerse yourself in the captivating world of Bangladeshi culture with our traditional dance performance service. Our talented dancers will take you on a journey through the diverse traditions and stories of Bangladesh through their mesmerizing performances. Whether you're hosting a cultural festival or a community gathering, our dance troupe will add a touch of authenticity and entertainment to your event. With colorful costumes, rhythmic music, and graceful movements, our dancers will leave your audience enthralled and inspired."
+    },
+    {
+        "id": 2,
+        "name": "Folk Music Ensemble",
+        "image": "https://i.ibb.co/LPCY25f/folk-song.webp",
+        "price": "TK 32,000 - TK 40,000",
+        "short_description": "Let the enchanting melodies of Bangladeshi folk music fill your event with joy and nostalgia.",
+        "long_description": "Our Folk Music Ensemble service brings the soulful sounds of Bangladesh to your community or cultural event. Our talented musicians and singers will transport your audience to the heart of rural Bangladesh with their authentic folk music performances. From Baul songs to Bhatiali tunes, our ensemble covers a wide range of traditional musical styles. Whether it's an outdoor festival or an intimate gathering, our musicians will create an atmosphere of warmth and nostalgia. Make your event unforgettable with the timeless melodies of Bangladeshi folk music."
+    },
+    {
+        "id": 3,
+        "name": "Traditional Art Exhibition",
+        "image": "https://i.ibb.co/bsydFPx/art-exhibition.jpg",
+        "price": "TK 30,000 - TK 42,000",
+        "short_description": "Showcase the rich heritage of Bangladesh through an exhibition of traditional art and crafts.",
+        "long_description": "Celebrate the artistic heritage of Bangladesh with our Traditional Art Exhibition service. We curate a stunning collection of traditional artworks, handicrafts, and textiles that showcase the craftsmanship and creativity of Bangladeshi artisans. Whether you're organizing a cultural fair or a community event, our exhibition will add a touch of elegance and cultural richness. Your guests will have the opportunity to admire and purchase exquisite pieces of Bangladeshi art, making your event not only entertaining but also culturally enriching."
+    },
+    {
+        "id": 4,
+        "name": "Cultural Food Festival",
+        "image": "https://i.ibb.co/k8Hfb4q/cultural-food.jpg",
+        "price": "TK 38,000 - TK 50,000",
+        "short_description": "Tantalize your taste buds with a delectable journey through the flavors of Bangladesh.",
+        "long_description": "Experience the culinary diversity of Bangladesh with our Cultural Food Festival service. Our expert chefs will prepare an array of traditional Bangladeshi dishes, from mouthwatering biryanis to flavorful curries and delicious sweets. Whether it's a community gathering or a cultural celebration, our food festival will delight your guests with authentic flavors and aromas. Immerse yourself in the rich gastronomic traditions of Bangladesh and create an unforgettable dining experience for your event attendees."
+    },
+    {
+        "id": 5,
+        "name": "Traditional Clothing Fashion Show",
+        "image": "https://i.ibb.co/XDDG1LL/clothing-show.jpg",
+        "price": "TK 31,000 - TK 44,000",
+        "short_description": "Celebrate the beauty and elegance of Bangladeshi traditional clothing in a dazzling fashion show.",
+        "long_description": "Elevate your event with our Traditional Clothing Fashion Show, where the vibrant and intricate designs of Bangladeshi traditional attire take center stage. Our talented models will showcase a stunning collection of sarees, kurta-pajamas, and panjabis, highlighting the craftsmanship and elegance of Bangladeshi fashion. Whether you're hosting a cultural festival or a community gala, this fashion show will add a touch of glamour and cultural pride to your event. Celebrate the beauty of Bangladesh through the art of fashion."
+    },
+    {
+        "id": 6,
+        "name": "Cultural Storytelling Workshop",
+        "image": "https://i.ibb.co/kMs2CS1/story-telling.jpg",
+        "price": "TK 33,000 - TK 48,000",
+        "short_description": "Engage and educate your audience with captivating tales from Bangladeshi folklore.",
+        "long_description": "Enrich your event with our Cultural Storytelling Workshop, where the magic of Bangladeshi folklore comes to life. Our skilled storytellers will transport your audience to the enchanting world of Bengali folk tales, myths, and legends. Whether it's a community event or a cultural gathering, this workshop will engage and educate your attendees with the rich oral traditions of Bangladesh. Through interactive storytelling sessions, your guests will gain a deeper appreciation for the cultural heritage and storytelling traditions of Bangladesh."
+    }
+]
