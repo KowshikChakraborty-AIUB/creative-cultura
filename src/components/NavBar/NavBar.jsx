@@ -1,15 +1,37 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const NavBar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
 
     const navLinks =
 
         <>
 
             <NavLink to={'/'} className={({ isActive, isPending }) => isPending ? 'Pending' : isActive ? 'bg-[#090813] text-white rounded hover:bg-[#090813] hover:text-white' : ''}><li><a>Home</a></li></NavLink>
-            <NavLink to={'/registration'} className={({ isActive, isPending }) => isPending ? 'Pending' : isActive ? 'bg-[#090813] text-white rounded hover:bg-[#090813] hover:text-white' : ''}><li><a>Registration</a></li></NavLink>
+            {
+                user ?
+                    ''
+                    :
+                    <NavLink to={'/registration'} className={({ isActive, isPending }) => isPending ? 'Pending' : isActive ? 'bg-[#090813] text-white rounded hover:bg-[#090813] hover:text-white' : ''}><li><a>Registration</a></li></NavLink>
+            }
 
         </>
+
+    const handleLogOut = () => {
+        logOut()
+            .then(userCredentials => {
+                toast.success('Logged Out Successfully!')
+                console.log(userCredentials.user);
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
+    }
 
 
     return (
@@ -32,8 +54,14 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to={'/login'} className="btn bg-black text-white hover:bg-black hover:text-white normal-case">Login</Link>
+                {
+                    user ?
+                        <Link to={'/login'} onClick={handleLogOut} className="btn bg-black text-white hover:bg-black hover:text-white normal-case">Logout</Link>
+                        :
+                        <Link to={'/login'} className="btn bg-black text-white hover:bg-black hover:text-white normal-case">Login</Link>
+                }
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
