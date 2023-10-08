@@ -1,11 +1,12 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 AOS.init();
 
 const ServiceCard = ({ service }) => {
 
-    const { name, short_description, price, image } = service;
+    const { id, name, short_description, price, image } = service;
 
     return (
         <div data-aos="flip-left" className="card bg-base-100 shadow-xl">
@@ -17,7 +18,9 @@ const ServiceCard = ({ service }) => {
                 <p>{short_description}</p>
                 <p className='font-semibold'>{price}</p>
                 <div className="card-actions">
-                    <button className="btn bg-black text-white hover:bg-black hover:text-white">Details</button>
+                    <Link to={`/service-detailed-info/${id}`}>
+                        <button className="btn bg-black text-white hover:bg-black hover:text-white">Details</button>
+                    </Link>
                 </div>
             </div>
         </div>

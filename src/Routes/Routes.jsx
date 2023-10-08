@@ -3,6 +3,7 @@ import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Registration from "../Pages/Registration/Registration";
 import Login from "../Pages/Login/Login";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +21,11 @@ const routes = createBrowserRouter([
         {
             path: '/login',
             element: <Login></Login>
+        },
+        {
+          path: '/service-detailed-info/:id',
+          element: <ServiceDetails></ServiceDetails>,
+          loader: () => fetch('/services.json')
         }
       ]
     },

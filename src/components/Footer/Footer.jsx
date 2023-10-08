@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer className="footer footer-center p-10 bg-black text-primary-content">
+        <footer className="footer footer-center p-10 bg-black text-primary-content mt-20">
             <aside>
                 <div className="flex items-center gap-2">
                     <img src="https://i.ibb.co/DYCn8nR/cultural-logo.jpg" className="h-12 rounded-full" alt="" />
