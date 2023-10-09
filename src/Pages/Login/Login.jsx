@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ImGoogle3 } from 'react-icons/im';
 
 const Login = () => {
     const [loginError, setLoginError] = useState(null)
@@ -84,7 +85,7 @@ const Login = () => {
                     </form>
                     <div className="bg-base-200 text-center">
                         <p className="text-center text-[#090813] font-bold">Login with</p>
-                        <button onClick={handleGoogleLogIn} className="btn w-4/5 text-white bg-[#090813] hover:text-white hover:bg-[#090813] normal-case mt-4">Google</button>
+                        <button onClick={handleGoogleLogIn} className="btn w-4/5 text-white bg-[#090813] hover:text-white hover:bg-[#090813] normal-case my-4"><ImGoogle3></ImGoogle3> Google</button>
                     </div>
                 </div>
             </div>
