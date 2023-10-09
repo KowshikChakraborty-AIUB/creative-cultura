@@ -3,7 +3,7 @@ const MentorshipProgram = () => {
         <div className="mt-20">
             <h2 className="text-5xl font-bold text-center">Mentorship Program</h2>
             <p className="text-center mt-10 text-xl">
-                Welcome to the Mentorship Program on Community and Culture! We believe in the power of guidance, shared knowledge, and community support. Our Mentorship Program is designed to facilitate meaningful connections and foster personal and professional growth within our cultural and creative community.
+                Welcome to the Mentorship Program on Creative Cultura! We believe in the power of guidance, shared knowledge, and community support. Our Mentorship Program is designed to facilitate meaningful connections and foster personal and professional growth within our cultural and creative community.
             </p>
             <h2 className="text-2xl font-bold mt-10">Program Overview</h2>
             <p className="mt-10 text-xl">

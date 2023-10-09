@@ -5,7 +5,7 @@ const Footer = () => {
                 <div className="flex items-center gap-2">
                     <img src="https://i.ibb.co/DYCn8nR/cultural-logo.jpg" className="h-12 rounded-full" alt="" />
                     <p className="text-xl font-bold">
-                        Community & Culture
+                    Creative Cultura
                     </p>
                 </div>
                 <p className="font-semibold">
