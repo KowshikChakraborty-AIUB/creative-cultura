@@ -8,7 +8,7 @@ const Registration = () => {
 
     const [registrationError, setRegistrationError] = useState(null)
 
-    const {createUser} = useContext(AuthContext)
+    const { createUser, setProfile } = useContext(AuthContext)
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -16,36 +16,44 @@ const Registration = () => {
     const handleCreateUser = (e) => {
         e.preventDefault();
         const form = new FormData(e.currentTarget)
+        const userName = form.get('username');
+        const photoURL = form.get('photoURL');
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
 
         setRegistrationError('');
 
-        if(password.length < 6){
+        if (password.length < 6) {
             setRegistrationError('Password should have at least 6 characters.')
             return;
         }
-        if(!/[A-Z]/.test(password)){
+        if (!/[A-Z]/.test(password)) {
             setRegistrationError('Password should have at least one uppercase letter.')
             return;
         }
-        if(!/[!@#$%^&*()_+[\]{};':"\\|,.<>?~]/.test(password)){
+        if (!/[!@#$%^&*()_+[\]{};':"\\|,.<>?~]/.test(password)) {
             setRegistrationError('Password should have at least one special character.')
             return;
         }
 
         createUser(email, password)
-        .then(userCredentials => {
-            toast.success('Account created successfully!')
-            console.log(userCredentials.user);
-            e.target.reset();
-            navigate(location?.state ? location.state : '/')
-        })
-        .catch(error => {
-            setRegistrationError(error.message);
-        })
-        
+            .then(userCredentials => {
+                toast.success('Account created successfully!')
+                console.log(userCredentials.user);
+                e.target.reset();
+                navigate(location?.state ? location.state : '/')
+
+                setProfile(userCredentials.user, userName, photoURL)
+                    .then(() => {
+                        console.log('Profile Updated Successfully!');
+                    })
+
+            })
+            .catch(error => {
+                setRegistrationError(error.message);
+            })
+
     }
 
 
@@ -57,6 +65,18 @@ const Registration = () => {
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleCreateUser} className="card-body bg-base-200">
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">User Name</span>
+                            </label>
+                            <input type="text" name="username" placeholder="user name" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Profile Pic URL (Optional)</span>
+                            </label>
+                            <input type="text" name="photoURL" placeholder="picture URL link" className="input input-bordered"/>
+                        </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>

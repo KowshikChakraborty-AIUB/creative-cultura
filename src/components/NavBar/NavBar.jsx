@@ -62,6 +62,14 @@ const NavBar = () => {
             <div className="navbar-end">
                 {
                     user ?
+                        <div className="flex items-center">
+                            <p className="mx-2 font-bold">{user.displayName}</p>
+                            <img className="mx-2 h-10 rounded-full" src={user.photoURL?user.photoURL : 'https://i.ibb.co/j4rcpWk/user-default.png'} alt="" />
+                        </div>
+                        : ''
+                }
+                {
+                    user ?
                         <Link to={'/login'} onClick={handleLogOut} className="btn bg-black text-white hover:bg-black hover:text-white normal-case">Logout</Link>
                         :
                         <Link to={'/login'} className="btn bg-black text-white hover:bg-black hover:text-white normal-case">Login</Link>
