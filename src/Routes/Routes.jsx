@@ -5,6 +5,8 @@ import Registration from "../Pages/Registration/Registration";
 import Login from "../Pages/Login/Login";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "../Routes/PrivateRoute";
+import MentorshipProgram from "../Pages/Mentorship Program/MentorshipProgram";
+import PhotoGallery from "../Pages/Photo Gallery/PhotoGallery";
 
 const routes = createBrowserRouter([
     {
@@ -27,6 +29,14 @@ const routes = createBrowserRouter([
           path: '/service-detailed-info/:id',
           element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
           loader: () => fetch('/services.json')
+        },
+        {
+          path: '/mentorship_program',
+          element: <PrivateRoute><MentorshipProgram></MentorshipProgram></PrivateRoute>
+        },
+        {
+          path: '/photo_gallery',
+          element: <PrivateRoute><PhotoGallery></PhotoGallery></PrivateRoute>
         }
       ]
     },

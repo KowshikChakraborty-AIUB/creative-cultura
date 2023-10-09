@@ -19,6 +19,12 @@ const NavBar = () => {
                     :
                     <NavLink to={'/registration'} className={({ isActive, isPending }) => isPending ? 'Pending' : isActive ? 'bg-[#090813] text-white rounded hover:bg-[#090813] hover:text-white' : ''}><li><a>Registration</a></li></NavLink>
             }
+            <NavLink to={'/mentorship_program'} className={({ isActive, isPending }) => isPending ? 'Pending' : isActive ? 'bg-[#090813] text-white rounded hover:bg-[#090813] hover:text-white' : ''}>
+                <li><a>Mentorship Program</a></li>
+            </NavLink>
+            <NavLink to={'/photo_gallery'} className={({ isActive, isPending }) => isPending ? 'Pending' : isActive ? 'bg-[#090813] text-white rounded hover:bg-[#090813] hover:text-white' : ''}>
+                <li><a>Photo Gallery</a></li>
+            </NavLink>
 
         </>
 
