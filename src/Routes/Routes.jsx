@@ -7,11 +7,13 @@ import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "../Routes/PrivateRoute";
 import MentorshipProgram from "../Pages/Mentorship Program/MentorshipProgram";
 import PhotoGallery from "../Pages/Photo Gallery/PhotoGallery";
+import ErrorPage from "../Pages/Error Page/ErrorPage";
 
 const routes = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: '/',
