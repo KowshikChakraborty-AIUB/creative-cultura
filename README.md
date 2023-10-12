@@ -1,6 +1,6 @@
 # Creative Cultura
 
-## Link: [https://event-management-51e7e.web.app](https://event-management-51e7e.web.app)
+## Link: [http://creative-cultura.surge.sh/](http://creative-cultura.surge.sh/)
 
 # Features
 
